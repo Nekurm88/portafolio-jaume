@@ -2,6 +2,7 @@
     padding-block-start: 40px;
     scroll-padding-block-end: 40px;
 }
+
 .testimony-title {
     background: var(--purple);
     align-self: flex-start;
@@ -16,16 +17,44 @@
     box-shadow: -4px 4px 0 var(--white);
 }
 
-/*.testimony-image img {
-    max-inline-size: 100%;
-}*/
-
 .testimony-description {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-block-end: 40px;
+}
+
+.testimony-button{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.button {
+    order: 2;
+}
+
+.button.is-secondary {
+    order: 1;
+}
+
+.lapycel {
+    max-inline-size: 100%;
+    block-size: auto;
+    padding-block-end: 40px;
+}
+
+.tablet {
+    
+    max-inline-size: 100%;
+    block-size: auto;
 }
     
+.neo {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
 @media screen and (min-width: 768px) {
     .testimony {
         display: flex;
@@ -53,15 +82,13 @@
     .testimony-button {
         display: flex;
         gap: 16px;
+        flex-direction: row;
     }
 
     .lapycel {
-             
         block-size: auto;
-        max-inline-size: 100%;
-        
-        
-    }
+        max-inline-size: auto;
+     }
 
     .testimony-image {
         align-self: center;
@@ -77,11 +104,62 @@
         gap: 24px
     }
 
-    .testimony-a img {
+    .testimonyb {
+        display: flex;
+        gap:24px; 
+        padding-block: 80px;
+        padding-inline: 128px;     
+    }
+
+    .testimony-descriptionb {
+        padding-block: 185px;
+        inline-size: 448px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-self: center;
+        
+    }
+    
+    .testimony-descriptionb p {
+        margin: 0;
+    }
+
+    .testimonyc {
+        display: flex;
+        flex-flow: row-reverse;
+        gap: 213px;
+        padding-block: 80px;
+        padding-inline-start: 128px;
+        padding-inline-end: 234px;
+    }
+
+    .testimony-descriptionc {
+        max-inline-size: 449px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .testimonyc img {
+        block-size: auto;
         
     }
 
-        
+    .neo{
+        height: auto;
+        width: 536px;
+    }
+
+    .button {
+        order: 1;
+    }
+    
+    .button.is-secondary {
+        order: 2;
+    }
+
 }
 
 

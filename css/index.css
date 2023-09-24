@@ -27,6 +27,7 @@
     --purple: #310A90;
     --green: #42E2B8;
     --white: white;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -34,5 +35,5 @@ body {
     min-block-size: 100vh;
     font: var(--body1);
     color: var(--purple);
+    scroll-behavior: smooth;
 }
-
