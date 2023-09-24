@@ -15,8 +15,20 @@
     gap: 16px;
 }
 
+.hero-description p {
+    font-size: 16px;
+    margin: 0;
+    font-style: normal;
+    line-height: 25px;
+}
+
 .hero-image {
     text-align: center;
+}
+
+.hero-image img {
+    max-inline-size: 100%;
+    block-size: auto;
 }
 
 .hero h1 {
@@ -28,6 +40,36 @@
     font: var(--headline5);
     display: block;
 }
+
+.hero-presentation {
+    padding-block-start: 40px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 24px;
+    padding-block-end: 40px;
+}
+
+.hero-presentation p {
+    /*border: 1px solid red;*/
+    font: Poppins;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 400;
+    inset-inline-end: 24px;
+    inset-inline-start: 24px;
+}
+
+.hero-presentation span {
+    font: var(--headline5);
+}
+
+.hero-presentation h2 {
+    margin: 0;
+}
+
+
 
 
 @media screen and (min-width: 768px) {
@@ -46,7 +88,35 @@
         text-align: end;
         flex: 1;
     }
+
+    .hero-presentation {
+        padding-block-start: 190px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        gap: 24px;
+        padding-block-end: 190px;
     }
+    
+    .hero-presentation p {
+        /*border: 1px solid red;*/
+        font: var(--headline5);
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 55px;
+        inset-inline-end: 24px;
+        inset-inline-start: 24px;
+    }
+    
+    .hero-presentation span {
+        font: var(--headline5);
+    }
+    
+    .hero-presentation h2 {
+        margin: 0;
+    }
+   }
     
     
     @media screen and (min-width: 1024px) {
@@ -54,6 +124,30 @@
             inline-size: 500px;
             block-size: 504px;
         }
-    }
+
+        .hero-presentation {
+            padding-block-start: 190px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding-block-end: 190px;
+            text-align: center;
+        }
         
- 
+        .hero-presentation p {
+            /*border: 1px solid blue;*/
+            font: var(--oxygen);
+            font-weight: lighter;
+            inset-inline-end: 24px;
+            inset-inline-start: 24px;
+        }
+        
+        .hero-presentation span {
+            font: var(--headline5);
+        }
+        
+        .hero-presentation h2 {
+            margin: 0;
+        }
+        
+    }

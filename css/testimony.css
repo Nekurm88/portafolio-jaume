@@ -1,0 +1,87 @@
+.testimony {
+    padding-block-start: 40px;
+    scroll-padding-block-end: 40px;
+}
+.testimony-title {
+    background: var(--purple);
+    align-self: flex-start;
+    color: var(--white);
+    font: var(--headline5);
+    text-decoration: none;
+    padding-block-start: 4px;
+    padding-block-end: 4px;
+    padding-inline-end: 8px;
+    padding-inline-start: 8px;
+    /*margin-inline-start: 4px;*/
+    box-shadow: -4px 4px 0 var(--white);
+}
+
+/*.testimony-image img {
+    max-inline-size: 100%;
+}*/
+
+.testimony-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+    
+@media screen and (min-width: 768px) {
+    .testimony {
+        display: flex;
+        align-items: center;
+        padding-block-start: 80px;
+        padding-block-end: 80px;
+    }
+    
+    .testimony-description {
+        max-inline-size: 449px;
+        padding-block-start: 80px;
+        padding-block-end: 80px;
+        padding-inline-start: 128px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left
+        /*flex: 1;*/
+    }
+
+    .testimony-description p {
+        margin:0
+    }
+
+    .testimony-button {
+        display: flex;
+        gap: 16px;
+    }
+
+    .lapycel {
+             
+        block-size: auto;
+        max-inline-size: 100%;
+        
+        
+    }
+
+    .testimony-image {
+        align-self: center;
+        /*vertical-align: middle;*/
+        /*block-size: auto;*/
+    }
+    
+    .testimony-a {
+        padding-inline-end: 113px       ;
+        display: flex;
+        flex-flow: row-reverse;
+        text-align: center;
+        gap: 24px
+    }
+
+    .testimony-a img {
+        
+    }
+
+        
+}
+
+
