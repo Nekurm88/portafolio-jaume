@@ -6,6 +6,9 @@
 @import "./menu.css";
 @import "./border.css";
 @import "./testimony.css";
+@import "./social.css";
+@import "./footer.css";
+@import "./form.css";
 
 
 
@@ -35,5 +38,6 @@ body {
     min-block-size: 100vh;
     font: var(--body1);
     color: var(--purple);
+    margin:0;
     scroll-behavior: smooth;
 }

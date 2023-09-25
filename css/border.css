@@ -10,7 +10,8 @@
     gap: 24px;
     justify-content: center;
     padding: 24px;
-
+    margin-block-start: 40px;
+    margin-block-end: 80px;
 }
 
 .testimonio img {

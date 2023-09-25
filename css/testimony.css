@@ -24,11 +24,28 @@
     margin-block-end: 40px;
 }
 
+.testimony-descriptionb {
+    padding-block: 40px;
+}
+
+.testimony-descriptionc {
+    padding-block: 40px;
+}
+
 .testimony-button{
     display: flex;
     gap: 1rem;
     flex-direction: column;
 }
+
+.testimony-image {
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+    justify-items: auto;
+    text-align: center;
+}
+
 
 .button {
     order: 2;
@@ -92,6 +109,7 @@
 
     .testimony-image {
         align-self: center;
+        align-items: center;
         /*vertical-align: middle;*/
         /*block-size: auto;*/
     }

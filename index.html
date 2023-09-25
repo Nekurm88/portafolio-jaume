@@ -14,26 +14,32 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-content">
+                <img src="./images/logo.png" width="70" height="20" alt="logo muy bonito">
+                <nav class="menu" aria-label="main-navigation">
+                    <ul>
+                        <li>
+                            <a class="is-active" href="#main">Hola</a>
+                        </li>
+                        <li>
+                            <a href="#project" href="#project">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#contact" href="#contact">Hablemos</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="button">Curriculum</button>
+            </div>
+
+        </div>
+        </header>
+
     <div class="wrapper">
-        <header class="header">
-            <img src="./images/logo.png" width="70" height="20" alt="logo muy bonito">
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a class="is-active" href="#main">Hola</a>
-                    </li>
-                    <li>
-                        <a href="#project">Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Hablemos</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="button">Curriculum</button>
-            </header>
     
-        <section class="hero" id="main">
+        <section aria-label="main" class="hero" id="main">
             <div class="hero-image">
                 <img src="images/jaume.png" width="338" height="330" alt="">
             </div>
@@ -59,7 +65,7 @@
             </h2>
             <a class="button-iconDown" href="#testimonia"><img src="./icons/arrow-down.svg"></a>
         </div>
-        <div class="testimony">
+        <div class="testimony" id="project">
             <div class="testimony-a" id="testimonia">
                 <div class="testimony-image">
                     <img class="lapycel" src="./images/img.png" width="652" height="392" alt="">
@@ -81,9 +87,7 @@
                 <p>LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM</p>
         </div>
         <div class="testimonyb">
-            
-
-                <div class="testimony-image">
+                  <div class="testimony-image">
                   <img class="tablet" src="./images/📱 iPad.png" width="448" height="467" alt="">
                 </div>
                 <div class="testimony-descriptionb">
@@ -94,7 +98,6 @@
                         <a target="_blank" href="https://github.com/Nekurm88/portafolio-jaume" class="button is-secondary">Ver Código</a>
                     </div>
                 </div>
-            
         </div>
         <div class="testimonio">
             <img src="./images/usser.png" alt="">
@@ -102,7 +105,6 @@
               <p>JASON LOPEZ / COFUNDADOR Y CEO MARVOL</p>
         </div>
         <div class="testimonyc">
-           
                     <div class="testimony-image">
                         <img class="neo" src="./images/📱 Iphone X.png" width="302" height="536" alt="">
                     </div>
@@ -123,7 +125,46 @@
               <span>"Por primera vez en la historia de nuestra empresa, aparecimos en todas las plataformas en las que trabajamos"..</span>
               <p>MARCO CORTEZ / NETNET</p>
         </div>
+        
+        <form action="" method="GET" class="form" >
+            <div class="form-content">
+                <a class="testimony-title" href="" >Hablemos</a>
+                <p>Si está interesado en trabajar conmigo en su próximo proyecto, 
+                    no dude en ponerse en contacto conmigo.</p>
+                <label for="form-name">
+                    Nombre Completo
+                </label>
+                <input required id="form-name" type="text" placeholder="Juan" name="name" id="">
+                <label for="form-name">
+                    Correo electrónico
+                </label>
+                <input required id="form-name" type="email" placeholder="Juan" name="name" id="">
+                <label for="form-name">
+                    Mensaje
+                </label>
+                <textarea required name="message" placeholder="Mensaje" id="form-message" cols="30" rows="7"></textarea>
+                <button class="button" type="submit">Enviar mensaje</button>
+            </form>
+            </div>
+
+        <footer class="footer" id="contact">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./images/logo.png" width="70" height="20" alt="logo muy bonito">
+                </div>
+                    <div class="social">
+                         <a class="button-icon" href="tel:8334419935"><img src="./icons/icon-phone.svg"></a>
+                        <a class="button-icon" href="tel:8334419935"><img src="./icons/icon-twitter_squared.svg"></a>
+                        <a class="button-icon" href="tel:8334419935"><img src="./icons/icon-instagram.svg"></a>
+                        <a class="button-icon" href="tel:8334419935"><img src="./icons/icon-important_mail.svg"></a>
+                    </div>
+                        <p>Hecho con el 💚 de Jaume. Copyright 2021 - Todos los derechos reservados.</p>
+
+            </div>
+        </footer>
     </div>
+
+
 
  </body>
 </html>
